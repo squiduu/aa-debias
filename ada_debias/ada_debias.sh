@@ -1,0 +1,12 @@
+python ada_debias.py \
+    --run_type debias \
+    --data_dir ../data/debias/ \
+    --debias_type gender \
+    --model_name_or_path bert-base-uncased \
+    --seed 42 \
+    --per_device_train_batch_size 256 \
+    --dataloader_num_workers 8 \
+    --learning_rate 2e-5 \
+    --num_train_epochs 3 \
+    --output_dir ./out/ \
+    --run_name run00
