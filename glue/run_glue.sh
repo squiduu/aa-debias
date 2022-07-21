@@ -1,0 +1,13 @@
+python run_glue.py \
+    --model_name_or_path ../ada_debias/out/bert-base-uncased4glue_run00_gender_epoch:3/ \
+    --task_name cola \
+    --do_train \
+    --do_eval \
+    --max_seq_length 128 \
+    --per_device_train_batch_size 32 \
+    --learning_rate 2e-5 \
+    --num_train_epochs 3 \
+    --output_dir ./out/ \
+    --run_name run00 \
+    --overwrite_output_dir \
+    --save_strategy no
