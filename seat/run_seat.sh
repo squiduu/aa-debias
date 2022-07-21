@@ -1,0 +1,14 @@
+python run_seat.py \
+    --tests seat6,seat6b,seat7,seat7b,seat8,seat8b \
+    --model_name bert \
+    --seed 42 \
+    --log_dir ./out/ \
+    --results_path ./out/bert_seat_run00.csv \
+    --ignore_cached_encs \
+    --data_dir ../data/tests/ \
+    --exp_dir ./out/ \
+    --num_samples 100000 \
+    --run_name run00 \
+    --use_ckpt \
+    --ckpt_dir ../ada_debias/out/bert-base-uncased4seat_run00_gender_epoch:3/ \
+    --version bert-base-uncased
